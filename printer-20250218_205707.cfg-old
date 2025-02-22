@@ -1,6 +1,3 @@
-#[include mmu/base/*.cfg]
-#[include mmu/optional/client_macros.cfg]
-#[include mmu/addons/dc_espooler.cfg]
 [mcu]
 canbus_uuid: bc95c16c885b
 
