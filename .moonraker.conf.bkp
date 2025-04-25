@@ -99,3 +99,7 @@ enable_file_preprocessor = True
 enable_toolchange_next_pos = True
 update_spoolman_location = True
 
+[spoolman]
+server = http://192.168.1.177:7912
+sync_rate = 5
+
