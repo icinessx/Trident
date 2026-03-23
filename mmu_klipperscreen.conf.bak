@@ -60,7 +60,7 @@ name: {{ gettext('T0') }}
 icon: mmu_t0
 method: printer.gcode.script
 params: { "script":"MMU_CHANGE_TOOL TOOL=0 QUIET=1" }
-enable: {{ (printer.mmu.tool != 0 or (printer.mmu.tool == 0 and printer.mmu.filament != "Loaded")) and printer.mmu.gate_status[0] != 0 and printer.mmu.action == "Idle" and printer.mmu.num_gates > 0 }}
+#enable: {{ (printer.mmu.tool != 0 or (printer.mmu.tool == 0 and printer.mmu.filament != "Loaded")) and printer.mmu.gate_status[0] != 0 and printer.mmu.action == "Idle" and printer.mmu.num_gates > 0 }}
 show_disabled: True
 refresh_on: printer.mmu.tool, printer.mmu.gate_status, printer.mmu.filament, printer.mmu.action
 [menu __main,__print mmu tools T1]
